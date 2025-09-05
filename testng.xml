@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SDETTask Suite" verbose="1" parallel="false">
+
+    <!-- Desktop run -->
+    <test name="Desktop">
+        <parameter name="viewport" value="desktop"/>
+        <classes>
+            <class name="tests.AddPickToBetslipTest"/>
+            <class name="tests.ValidateOddsUpdateTest"/>
+            <class name="tests.CheckSportSortingTest"/>     <!-- по желание -->
+            <class name="tests.ResponsiveDesignTest"/>      <!-- отделно валидира resize -->
+        </classes>
+    </test>
+
+    <!-- Mobile run -->
+    <test name="Mobile">
+        <parameter name="viewport" value="mobile"/>
+        <classes>
+            <class name="tests.AddPickToBetslipTest"/>
+            <class name="tests.ValidateOddsUpdateTest"/>
+        </classes>
+    </test>
+
+</suite>
