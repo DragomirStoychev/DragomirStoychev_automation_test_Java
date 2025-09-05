@@ -271,8 +271,6 @@ public class LiveBettingPage extends BasePage {
         return false;
     }
 
-    // ===== NEW helper for mobile flow =====
-
     /** Quick check: is there at least one selected/active outcome in the grid? */
     public boolean isAnyPickSelectedQuick() {
         List<WebElement> picks = driver.findElements(outcomeButtons);
